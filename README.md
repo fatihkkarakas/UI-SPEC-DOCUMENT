@@ -47,3 +47,19 @@ This section will appear on the left side of the screen when a user login or upd
  2. Admin
  3. SuperAdmin
 * The "Enable" option should be on the screen as a check box, unlike other information.
+
+## Administration Screen
+On this page, some information of users registered in the system should appear. The information to be displayed is as follows:
+
+* User ID
+* Username
+* Email
+* Enabled (User activity(true/false)) Only "Enabled=true" users should appear on the screen by filtering with the "Hide Disabled User" button in the button container. Admin should be able to update their information by clicking on an existing user. There should be a filter icon and a sort icon next to the information titles. An example table is shown below.
+ID	İkinci Başlık	Email	Enabled
+1	AdminUser	admin@piworks.net	true
+2	Test User	testuser@piworks.net	true
+
+## Design Details
+* In the screen divided into "New User" and "Administrator", this screen should be on the left.
+* The color of the title section of the table should be #0E98E5. Text and icons must be white in color. Text font size should be 12.
+* In the section with user information, the colors should be consecutively white and lightblue. The texts should be 12 pts in black.
