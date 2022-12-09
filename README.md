@@ -3,8 +3,14 @@
 # User Interface Specification Document
 
 The user interface specification document in English for the user management screen. This interface will come from 3 sections: user registration screen, admin screen and button container.
+* Ability to add new User with rectangle shape +New User button on the top left of the page
+* Ability to save user with rectangle shape Save User button on the top right of the page
+* Ability to hide disabled user with tick button that writes 'Hide Disabled User' right to the button
+* Right half of the page should include New User header row and below that there must be four input rows, one select row and one tick button one under the other.
+* Left half of the page should include an SQL like table which shows the users and information about them
 
 ## Button Container
+
 The button container will be above the admin and user registration screens. The horizontal length of the container will be 100 px, the vertical length will be 8 px. The buttons in the container are as follows:
 
 1. New User
@@ -12,14 +18,14 @@ The button container will be above the admin and user registration screens. The 
 3. Save User
 
 ### New User Button
+
 * This button will be on the far left of the container and will be rectangular. The margins of the button should be 50 px from the left, 10 px from the top and bottom.
 * The button to be rectangular should have the color code #167BB3 or close tones of the specified color.
 * A "+" icon will be placed to the left of the "New User" text in the button. The icon and text will be centered inside the button.
 * This button will lead the administrator to the new user screen.
 
 ### Hide Disabled User Button
-* This button will be in the container as "Check Button". The text "Hide Enable User" will be located adjacent to the right of the check box. Ex:
-  1. [x] Hide Disabled User
+* This button will be in the container as "Check Button". The text "Hide Enable User" will be located adjacent to the right of the check box.
 * This button will be 5 px to the right of the "New User" button and will be vertically centered according to the container height.
 * This button will hide the inactive users in the admin screen.
 
@@ -37,8 +43,6 @@ This section will appear on the left side of the screen when a user login or upd
 * Email
 * User Roles
 * Enable (User activity) When the "Save User" button is clicked, the information found here will be sent to the admin screen.
-
-### Design Details
 * The container with the title "New User" will have a length of 50 px horizontally and 8 px vertically. The "New User" title should be 24 pts.
 * The user information under the title should be written as a list. The requested user information should be on the left of the screen. The boxes where the information will be written should be rectangular text boxes. Text boxes should be 5 px high and 30 px wide.
 * The space between the two text boxes should be 2 px. The texts of the requested information should center the text boxes vertically.
@@ -49,17 +53,16 @@ This section will appear on the left side of the screen when a user login or upd
 * The "Enable" option should be on the screen as a check box, unlike other information.
 
 ## Administration Screen
-On this page, some information of users registered in the system should appear. The information to be displayed is as follows:
+Some information of users registered in the system should appear. The information to be displayed is as follows:
 
 * User ID
 * Username
 * Email
-* Enabled (User activity(true/false)) Only "Enabled=true" users should appear on the screen by filtering with the "Hide Disabled User" button in the button container. Admin should be able to update their information by clicking on an existing user. There should be a filter icon and a sort icon next to the information titles. An example table is shown below.
-ID	İkinci Başlık	Email	Enabled
-1	AdminUser	admin@piworks.net	true
-2	Test User	testuser@piworks.net	true
-
-## Design Details
+* Enabled (User activity(true/false)) Only "Enabled=true" users should appear on the screen by filtering with the "Hide Disabled User" button in the button container. Admin should be able to update their information by clicking on an existing user. There should be a filter icon and a sort icon next to the information titles.
+* When the header in each column is clicked, there should be 3 options and you should give an icon accordingly.
+  1. ASC(ascendant)
+  2. DESC(descendant)
+  3. By creation time
 * In the screen divided into "New User" and "Administrator", this screen should be on the left.
 * The color of the title section of the table should be #0E98E5. Text and icons must be white in color. Text font size should be 12.
 * In the section with user information, the colors should be consecutively white and lightblue. The texts should be 12 pts in black.
